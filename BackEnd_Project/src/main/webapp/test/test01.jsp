@@ -37,7 +37,7 @@
 	</nav>
 	<br><br>
   <div class="text-center">
-		<button  type="button" class="btn btn-primary"> 로그인 </button>
+		<button  type="button" class="btn btn-primary"> 로그인1 </button>
 				<!-- onclick="location.href='login_form_todo.jsp'">로그인</button>-->
 	</div>
 </body>
