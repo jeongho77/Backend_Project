@@ -68,29 +68,8 @@
     width: 45%;
     padding: 10px;
     margin: 10px;
-    border: 1px solid #ccc;
     border-radius: 5px;
     background-color: #f7f7f7;
-    position: relative;
-    transition: background-color 0.3s;
-  }
-  
-  .box:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    background-color: #ccc;
-  }
-  
-  .box:hover {
-    background-color: #e9e9e9;
-  }
-  
-  .box h2 {
-    margin-bottom: 10px;
   }
   
   .box ul {
@@ -99,7 +78,25 @@
   }
   
   .box li {
-    margin-bottom: 10px;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    transition: background-color 0.3s;
+  }
+  
+  .box li:first-child {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+  
+  .box li:last-child {
+    border-bottom: none;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+  
+  .box li:hover {
+    background-color: #e9e9e9;
+    cursor: pointer;
   }
   
   .box li h3,
