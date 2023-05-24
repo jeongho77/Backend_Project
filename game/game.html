@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" href="game.css">
+<head>
+    <title>숫자 맞추기 게임</title>
+    
+</head>
+<body>
+    <h1>숫자 맞추기 게임</h1>
+    <p>1부터 100 사이의 숫자를 추측해보세요!</p>
+    <input type="number" id="guessInput" placeholder="숫자를 입력하세요" min="1" max="100">
+    <button onclick="checkGuess()">제출</button>
+    <p id="result"></p>
+
+    <script>
+        var randomNumber = Math.floor(Math.random() * 100) + 1;
+        var guessInput = document.getElementById('guessInput');
+        var result = document.getElementById('result');
+
+        function checkGuess() {
+            var userGuess = parseInt(guessInput.value);
+
+            if (userGuess === randomNumber) {
+                result.textContent = '축하합니다! 숫자를 맞췄습니다!';
+                result.style.color = 'green';
+                guessInput.disabled = true;
+            } else if (userGuess < randomNumber) {
+                result.textContent = '숫자가 너무 작습니다. 더 큰 숫자를 입력해보세요!';
+                result.style.color = 'red';
+            } else {
+                result.textContent = '숫자가 너무 큽니다. 더 작은 숫자를 입력해보세요!';
+                result.style.color = 'blue';
+            }
+        }
+    </script>
+</body>
+</html>
