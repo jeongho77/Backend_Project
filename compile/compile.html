@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>코딩 테스트</title>
+  <style>
+    body {
+      background-color: #ffaf6e;
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .editor {
+      width: 100%;
+      height: 200px;
+      background-color: #fff;
+      border: 1px solid #ddd;
+      box-sizing: border-box;
+      padding: 10px;
+      font-family: monospace;
+      font-size: 14px;
+    }
+
+    .output {
+      margin-top: 10px;
+      background-color: #fff;
+      border: 1px solid #ddd;
+      box-sizing: border-box;
+      padding: 10px;
+      font-family: monospace;
+      font-size: 14px;
+    }
+
+    .button {
+      display: inline-block;
+      background-color: #333;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      margin-top: 10px;
+      cursor: pointer;
+    }
+
+    .button:hover {
+      background-color: #555;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>코딩 테스트 - 자바</h1>
+    <textarea id="codeEditor" class="editor" placeholder="자바 코드를 입력하세요"></textarea>
+    <button id="runButton" class="button">실행</button>
+    <div id="output" class="output"></div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/graalvm-vm/dist/graalvm-vm.js"></script>
+  <script>
+    function runCode() {
+      var code = document.getElementById('codeEditor').value;
+      var output = document.getElementById('output');
+      output.textContent = '';
+
+      try {
+        var graalVM = new GraalVM();
+        var result = graalVM.execute(code);
+        output.textContent = result;
+      } catch (error) {
+        output.textContent = 'Error: ' + error.message;
+      }
+    }
+
+    var runButton = document.getElementById('runButton');
+    runButton.addEventListener('click', runCode);
+  </script>
+</body>
+</html>
