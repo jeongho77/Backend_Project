@@ -1,92 +1,93 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-  }
-  
-  header {
-    background-color:  #ffaf6e;
-    color: #fff;
-    padding: 20px;
-    text-align: fixed;
-    left: 0%;
-    right: 0%;
-  }
-
-  header h1 {
-    margin: 0;
-    font-size: 24px;
-    cursor: pointer;
-  }
-
-  /* Navigation 스타일 */
- nav {
-  background-color: #f6c090;
-  padding: 10px;
-}
-
-nav ul {
-  list-style-type: none;
+  font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  text-align: center;
 }
 
-nav ul li {
-  display: inline;
+header {
+  background-color:  #ffaf6e;
+  color: #fff;
+  padding: 20px;
+  text-align: fixed;
+  left: 0%;
+  right: 0%;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 24px;
   cursor: pointer;
 }
 
+/* Navigation 스타일 */
+nav {
+background-color: #f6c090;
+padding: 10px;
+}
+
+nav ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+text-align: center;
+}
+
+nav ul li {
+display: inline;
+cursor: pointer;
+}
+
 nav ul li a {
-  display: inline-block;
-  padding: 10px;
-  text-decoration: none;
-  color: #333;
+display: inline-block;
+padding: 10px;
+text-decoration: none;
+color: #333;
 }
 
 nav ul li a:hover {
-  background-color: #ffaf6e;
-  color: #fff;
+background-color: #ffaf6e;
+color: #fff;
 }
 
 
- /* Main 스타일 */
- main {
-  padding: 20px;
+/* Main 스타일 */
+main {
+padding: 20px;
 }
 
 /* Footer 스타일 */
 footer {
-  background-color: #ffaf6e;
-  color: #fff;
-  padding: 20px;
-  text-align: center;
+background-color: #ffaf6e;
+color: #fff;
+padding: 20px;
+text-align: center;
 }
 
-  
-  .post-list {
-    margin: 20px;
-  }
-  
-  .post {
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    margin-bottom: 10px;
-    padding: 10px;
-  }
-  
-  .post-title {
-    color: #333;
-    font-size: 20px;
-    margin-bottom: 5px;
-  }
-  
-  .post-meta {
-    color: #777;
-    font-size: 14px;
-    margin-bottom: 5px;
-  }
-  
-  .post-content {
-    color: #666;
-  }
+.post-list {
+margin: 20px;
+max-width: 600px; /* 원하는 최대 너비 설정 */
+width: 100%;
+}
+
+.post {
+border: 1px solid #ddd;
+border-radius: 5px;
+margin-bottom: 10px;
+padding: 10px;
+}
+
+.post-title {
+color: #333;
+font-size: 20px;
+margin-bottom: 5px;
+}
+
+.post-meta {
+color: #777;
+font-size: 14px;
+margin-bottom: 5px;
+}
+
+.post-content {
+color: #666;
+}
