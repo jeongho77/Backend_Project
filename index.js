@@ -3,13 +3,13 @@ function moveMain() {
     location.href = "index.html"
 }
 function moveCommunity() {
-    location.href = "community.html"
+    location.href = "board_page/community.html"
 }
 
 function moveKnowledge() {
-    location.href = "#"
+    location.href = "board_page/knowledge.html"
 }
 
 function moveQ() {
-    location.href = "#"
+    location.href = "board_page/qna.html"
 }
