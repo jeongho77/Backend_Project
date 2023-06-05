@@ -1,21 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OKKY Community</title>
+  <link rel="stylesheet" href="community.css">
+  <script type="text/javascript" src="community.js"></script>
 </head>
 <body>
-    <header>
-        <h1>Nekarakubae</h1>
-        <nav>
-            <ul>
-                <li onclick="moveCommunity()">커뮤니티</li>
-                <li onclick="moveKnowledge()">지식</li>
-                <li onclick="moveQ()">질문과 답변</a></li>
-            </ul>
-        </nav>
-    </header>
+  <header>
+    <h1 onclick="moveMain()">Nekarakubae</h1>
+    <nav>
+        <ul>
+            <li onclick="moveCommunity()">커뮤니티</li>
+            <li onclick="moveKnowledge()">지식</li>
+            <li onclick="moveQ()">질문과 답변</a></li>
+        </ul>
+    </nav>
+</header>
+  
+  <section class="post-list">
+    <article class="post">
+      <h2 class="post-title">First Post</h2>
+      <p class="post-meta">Posted by User1 on 2023-06-01</p>
+      <p class="post-content">This is the content of the first post.</p>
+    </article>
+    
+    <article class="post">
+      <h2 class="post-title">Second Post</h2>
+      <p class="post-meta">Posted by User2 on 2023-06-02</p>
+      <p class="post-content">This is the content of the second post.</p>
+    </article>
+    
+    <!-- Add more posts here -->
+    
+  </section>
+
+  <footer>
+    <p>Nekarakubae &copy; 2023. All rights reserved.</p>
+</footer>
 </body>
 </html>
