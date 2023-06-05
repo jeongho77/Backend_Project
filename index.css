@@ -22,12 +22,11 @@
      right: 0;
      display: flex;
      align-items: center;
-
+     justify-content: space-between;
  }
 
  header h1 {
      margin: 0;
-     font-size: 24px;
      cursor: pointer;
  }
 
@@ -38,7 +37,7 @@
 
  /* Footer 스타일 */
  footer {
-     background-color: #ffaf6e;
+    background-image: url(./images/spotlight03.jpg);
      color: #fff;
      padding: 20px;
      text-align: center;
