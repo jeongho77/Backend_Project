@@ -12,7 +12,7 @@
 
  /* Header 스타일 */
  header {
-     background-color: #ffaf6e;
+     background-image: url(./images/spotlight03.jpg);
      color: #fff;
      padding: 20px;
      position: fixed;
@@ -20,6 +20,8 @@
      /* width: 100% */
      left: 0;
      right: 0;
+     display: flex;
+     align-items: center;
 
  }
 
@@ -27,36 +29,6 @@
      margin: 0;
      font-size: 24px;
      cursor: pointer;
- }
-
- /* Navigation 스타일 */
- nav {
-     background-color: #f6c090;
-     padding: 10px;
- }
-
- nav ul {
-     list-style-type: none;
-     margin: 0;
-     padding: 0;
-     text-align: center;
- }
-
- nav ul li {
-     display: inline;
-     cursor: pointer;
- }
-
- nav ul li a {
-     display: inline-block;
-     padding: 10px;
-     text-decoration: none;
-     color: #333;
- }
-
- nav ul li a:hover {
-     background-color: #ffaf6e;
-     color: #fff;
  }
 
  /* Main 스타일 */
