@@ -16,6 +16,7 @@ body {
   header h1 {
     margin: 0;
     font-size: 24px;
+    cursor: pointer;
   }
 
   /* Navigation 스타일 */
@@ -33,6 +34,7 @@ nav ul {
 
 nav ul li {
   display: inline;
+  cursor: pointer;
 }
 
 nav ul li a {
