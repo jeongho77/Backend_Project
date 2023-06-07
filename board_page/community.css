@@ -5,12 +5,20 @@ body {
 }
 
 header {
-  background-color:  #ffaf6e;
+  background-image: url(../images/spotlight03.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   color: #fff;
   padding: 20px;
-  text-align: fixed;
-  left: 0%;
-  right: 0%;
+  position: fixed;
+  top: 0;
+  /* width: 100% */
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 header h1 {
@@ -57,10 +65,13 @@ padding: 20px;
 
 /* Footer 스타일 */
 footer {
-background-color: #ffaf6e;
-color: #fff;
-padding: 20px;
-text-align: center;
+  background-image: url(../images/spotlight03.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
 }
  /* DB 내용 가져오기 */
 .container {
