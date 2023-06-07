@@ -13,3 +13,7 @@ function moveKnowledge() {
 function moveQ() {
     location.href = "qna.html"
 }
+
+function moveCommunityPage() {
+    location.href = "community_page.html"
+}

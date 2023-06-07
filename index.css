@@ -13,9 +13,6 @@
  /* Header 스타일 */
  header {
      background-image: url(./images/spotlight03.jpg);
-     background-repeat: no-repeat;
-     background-position: center;
-     background-size: cover;
      color: #fff;
      padding: 20px;
      position: fixed;
@@ -111,10 +108,7 @@
 
  /* Footer 스타일 */
  footer {
-     background-image: url(./images/spotlight03.jpg);
-     background-repeat: no-repeat;
-     background-position: center;
-     background-size: cover;
+    background-image: url(./images/spotlight03.jpg);
      color: #fff;
      padding: 20px;
      text-align: center;
