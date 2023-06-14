@@ -109,9 +109,11 @@
  /* Footer 스타일 */
  footer {
     background-image: url(./images/spotlight03.jpg);
-     color: #fff;
-     padding: 20px;
-     text-align: center;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    position: absolute;
  }
 
  /* 스타일링을 위한 CSS 코드를 여기에 작성하세요 */
