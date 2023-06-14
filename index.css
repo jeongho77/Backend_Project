@@ -103,11 +103,9 @@
      cursor: pointer;
      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
  }
-
- /* Main 스타일 */
- main {
-     padding: 20px;
- }
+.postcontainer {
+    width: 100%;
+}
 
  /* Footer 스타일 */
  footer {
