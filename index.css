@@ -100,6 +100,11 @@
      cursor: pointer;
      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
  }
+
+ .center{
+    margin: 0 auto;
+    display: block;
+   }
 .postcontainer {
     width: 100%;
 }
