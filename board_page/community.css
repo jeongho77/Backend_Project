@@ -117,6 +117,9 @@ footer {
   color: #fff;
   padding: 20px;
   text-align: center;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
 }
  /* DB 내용 가져오기 */
 .container {

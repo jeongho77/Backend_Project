@@ -1,73 +1,126 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f2f2f2;
-    margin: 0;
-    padding: 0;
+ /* 전체 스타일 */
+ html {
+    scroll-behavior: smooth;
 }
 
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    padding-top: 100px;
+}
+
+/* Header 스타일 */
 header {
-    background-color: #ffaf6e;
+    background-image: url(../images/spotlight03.jpg);
     color: #fff;
     padding: 20px;
+    position: fixed;
+    top: 0;
+    /* width: 100% */
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav {
+   margin-left: 30px;
+   cursor: pointer;
+}
+
+nav span {
+   margin-right: 5px;
+}
+
+.w-btn {
+   position: relative;
+   border: none;
+   display: inline-block;
+   padding: 15px 30px;
+   border-radius: 15px;
+   font-family: "paybooc-Light", sans-serif;
+   text-decoration: none;
+   font-weight: 600;
+   transition: 0.25s;
+}
+
+.w-btn-outline {
+   position: relative;
+   padding: 15px 30px;
+   border-radius: 15px;
+   font-family: "paybooc-Light", sans-serif;
+   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+   text-decoration: none;
+   font-weight: 600;
+   transition: 0.25s;
+}
+.w-btn-indigo {
+   background-color: aliceblue;
+   color: #1e6b7b;
+}
+
+.w-btn-indigo-outline {
+   border: 3px solid aliceblue;
+   color: #1e6b7b;
+}
+
+.w-btn-indigo-outline:hover {
+   color: #1e6b7b;
+   background: aliceblue;
+}
+.w-btn:hover {
+   letter-spacing: 2px;
+   transform: scale(1.2);
+   cursor: pointer;
+}
+
+.w-btn-outline:hover {
+   letter-spacing: 2px;
+   transform: scale(1.2);
+   cursor: pointer;
+}
+
+.w-btn:active {
+   transform: scale(1.5);
+}
+
+.w-btn-outline:active {
+   transform: scale(1.5);
 }
 
 header h1 {
     margin: 0;
-    font-size: 24px;
-}
-
-nav {
-    background-color: #f2f2f2;
-    padding: 10px;
-}
-
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-}
-
-nav ul li a {
-    display: inline-block;
-    padding: 10px;
-    text-decoration: none;
-    color: #333;
-}
-
-nav ul li a:hover {
-    background-color: #ffaf6e;
-    color: #fff;
+    cursor: pointer;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
 }
 
 .signup-container {
     background-color: #fff;
     max-width: 400px;
     margin: 100px auto;
-    padding: 20px;
+    padding: 50px;
     border: 1px solid #ddd;
     border-radius: 4px;
     text-align: center;
 }
 
 .signup-container h2 {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .signup-container form input {
     display: block;
     width: 100%;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
 }
 
 .signup-container form button {
-    width: 100%;
+    width: 105%;
     padding: 10px;
     background-color: #333;
     color: #fff;
@@ -81,7 +134,7 @@ nav ul li a:hover {
 }
 
 .signup-container p {
-    margin-top: 20px;
+    margin-top: 25px;
 }
 
 .signup-container p a {
@@ -92,9 +145,13 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
-footer {
-    background-color: #ffaf6e;
+ /* Footer 스타일 */
+ footer {
+    background-image: url(../images/spotlight03.jpg);
     color: #fff;
     padding: 20px;
     text-align: center;
-}
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+ }
