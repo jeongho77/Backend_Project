@@ -1,41 +1,41 @@
  /* 전체 스타일 */
- html {
-     scroll-behavior: smooth;
- }
+html {
+    scroll-behavior: smooth;
+}
 
- body {
-     font-family: Arial, sans-serif;
-     margin: 0;
-     padding: 0;
-     padding-top: 100px;
- }
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    padding-top: 100px;
+}
 
  /* Header 스타일 */
- header {
-     background-image: url(./images/spotlight03.jpg);
-     color: #fff;
-     padding: 20px;
-     position: fixed;
-     top: 0;
-     /* width: 100% */
-     left: 0;
-     right: 0;
-     display: flex;
-     align-items: center;
-     justify-content: space-between;
- }
+header{
+    background-image: url(./images/spotlight03.jpg);
+    color: #fff;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    /* width: 100% */
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 
- nav {
+nav {
     margin-left: 30px;
     cursor: pointer;
- }
+}
 
- nav span {
+nav span {
     margin-right: 5px;
- }
+}
 
  /* 로그인 버튼 */
- button {
+button {
     margin: 20px;
 }
 
@@ -96,19 +96,19 @@
 }
 
  header h1 {
-     margin: 0;
-     cursor: pointer;
-     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    margin: 0;
+    cursor: pointer;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
  }
 
- .center{
+.center {
     margin: 0 auto;
     display: block;
-   }
+}
+
 .postcontainer {
     width: 100%;
 }
-
  /* Footer 스타일 */
  footer {
     background-image: url(./images/spotlight03.jpg);
@@ -117,52 +117,84 @@
     text-align: center;
     width: 100%;
     position: absolute;
- }
+}
+/* 스타일링을 위한 CSS 코드를 여기에 작성하세요 */
+.box-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 
- /* 스타일링을 위한 CSS 코드를 여기에 작성하세요 */
- .box-container {
-     display: flex;
-     flex-wrap: wrap;
-     justify-content: center;
- }
+.box {
+    width: 45%;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    background-color: #f7f7f7;
+}
+.box h2 {
+    padding-left: 15px;
+}
 
- .box {
-     width: 45%;
-     padding: 10px;
-     margin: 10px;
-     border-radius: 5px;
-     background-color: #f7f7f7;
- }
+.box ul {
+    list-style-type: none;
+    padding: 0;
+}
 
- .box ul {
-     list-style-type: none;
-     padding: 0;
- }
+.box li {
+    display: flex;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    transition: background-color 0.3s;
+}
 
- .box li {
-     padding: 10px;
-     border-bottom: 1px solid #ccc;
-     transition: background-color 0.3s;
- }
+.box li:first-child { 
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
 
- .box li:first-child {
-     border-top-left-radius: 5px;
-     border-top-right-radius: 5px;
- }
+.box li:last-child {
+    border-bottom: none;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
 
- .box li:last-child {
-     border-bottom: none;
-     border-bottom-left-radius: 5px;
-     border-bottom-right-radius: 5px;
- }
+.box li:hover {
+    background-color: #e9e9e9;
+    cursor: pointer;
+}
 
- .box li:hover {
-     background-color: #e9e9e9;
-     cursor: pointer;
- }
+.box li h3 {
+    padding-left: 10px;
+    max-width: 200px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
 
- .box li h3,
- .box li small {
-     margin: 0;
-     padding: 0;
- }
+.box li small {
+    margin-left: 10px;
+    padding: 0;
+}
+
+.box li #left {
+    width: 85%;
+}
+
+.box li #right {
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box li #right img {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+.box li #right small {
+    font-size: 12px;
+    margin-right: 10px;
+}
