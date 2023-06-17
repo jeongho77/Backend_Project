@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <script type="text/javascript" src="community.js"></script>
     <title>상세페이지</title>
 </head>
+
 <body>
     <header>
         <h1 onclick="moveMain()">Nekarakubae</h1>
@@ -28,10 +30,16 @@
     <main class="container">
         <section class="main-list">
             <article class="main">
-                <h2>게시물 제목</h2>
+                <div class="main-title">
+                    <h2>뉴진스의 하입보이</h2>
+                </div>
                 <hr>
-                <p class="author">작성자 ID</p>
-                <p class="date">작성일 받아오는 공간</p>
+                <div class="main-info">
+                    <p class="author">이이잉</p>
+                    <img src="../images/icon_view.png" alt="조회수">
+                    <small>200</small>
+                    <p class="date">2023-06-17</p>
+                </div>
                 <div class="content">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eu pulvinar nisl. Vestibulum
                         cursus mi eu orci suscipit cursus. Sed interdum purus tellus, sed cursus sem sollicitudin vitae.
@@ -41,17 +49,27 @@
                         turpis condimentum. Suspendisse potenti. Suspendisse condimentum libero at risus dignissim
                         fringilla. Nullam tincidunt semper tellus, non pharetra risus placerat in. Mauris eu rutrum
                         quam. Duis ullamcorper nunc vel ante fringilla, sed laoreet metus cursus.</p>
-                    <p>Nullam mattis aliquam commodo. Nunc vitae urna vel purus porttitor porttitor eu id enim. Mauris
-                        sit amet magna justo. Morbi a dignissim nisi. Praesent fermentum vestibulum est nec ultricies.
-                        Mauris tristique pretium efficitur. Nunc ullamcorper metus nec tincidunt vestibulum. Integer
-                        viverra, orci at aliquam auctor, urna sapien mollis tellus, eu laoreet nunc nisl sit amet nunc.
-                        Ut id erat lacinia, commodo neque eget, laoreet nisl. Donec ut scelerisque odio.</p>
                 </div>
+            </article>
+
+            <article class="comments">
+                <h3>댓글</h3>
+                <div class="comment-form">
+                    <input type="text" placeholder="댓글을 작성해주세요." class="comment-input">
+                    <button type="submit" class="comment-submit">등록</button>
+                </div>
+                <ul class="comment-list">
+                    <li>
+                        <p class="comment-author">댓글 작성자</p>
+                        <p class="comment-content">댓글 내용</p>
+                        <p class="comment-date">작성일시</p>
+    
+                    </li>
+                    <!-- 다른 댓글들 -->
+                </ul>
             </article>
         </section>
     </main>
-    <footer>
-        <p>Nekarakubae &copy; 2023. All rights reserved.</p>
-    </footer>
 </body>
+
 </html>
