@@ -24,21 +24,35 @@
             </button>
         </div>
     </header>
+    <div class="page-title">
+        <h2>커뮤니티 게시판</h2>
+        <small>여러분들의 소통을 위한 공간입니다.</small>
+    </div>
     <div class="container">
         <section class="post-list">
-            <article class="post">
-                <h2 class="post-title" onclick="moveCommunityPage()">First Post</h2>
-                <p class="post-meta">Posted by User1 on 2023-06-01</p>
-                <p class="post-content">This is the content of the first post.</p>
+            <article class="post" onclick="moveCommunityPage()">
+                <h2 class="post-title">안녕하세요!</h2>
+                <p class="post-content">
+                    Baby, got me looking so crazy
+                    빠져버리는 daydream
+                    Got me feeling you
+                    너도 말해줄래
+                </p>
+                <div class="post-meta">
+                    <div id="left">
+                        <p>작성자 : 미연</p>
+                        <p>작성일 : 2023-06-17</p>
+                    </div>
+                    <div id="right">
+                        <img src="../images/icon_view.png" alt="조회수">
+                        <small>200</small>
+                        <img src="../images/icon_chat.png" alt="댓글">
+                        <small>10</small>
+                        <img src="../images/icon_heart.png" alt="좋아요">
+                        <small>20</small>
+                    </div>
+                </div>
             </article>
-
-            <article class="post">
-                <h2 class="post-title">Second Post</h2>
-                <p class="post-meta">Posted by User2 on 2023-06-02</p>
-                <p class="post-content">This is the content of the second post.</p>
-            </article>
-
-            <!-- Add more posts here -->
 
         </section>
     </div>
