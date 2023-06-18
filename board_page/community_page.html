@@ -11,7 +11,7 @@
 
 <body>
     <header>
-        <h1 onclick="moveMain()">Nekarakubae</h1>
+        <img src="../images/title.png" onclick="moveMain()" alt="타이틀">
         <nav>
             <span onclick="moveCommunity()" class="w-btn">커뮤니티</span>
             <span onclick="moveKnowledge()" class="w-btn">지식</span>
@@ -29,6 +29,10 @@
 
     <main class="container">
         <section class="main-list">
+            <div class="modify-button">
+                <button onclick="" class="w-btn" type="button">글 수정하기</button>
+                <button onclick="" class="w-btn" type="button">글 삭제하기</button>
+            </div>
             <article class="main">
                 <div class="main-title">
                     <h2>뉴진스의 하입보이</h2>
@@ -51,9 +55,11 @@
                         quam. Duis ullamcorper nunc vel ante fringilla, sed laoreet metus cursus.</p>
                 </div>
             </article>
-
+            <div class="like-button">
+                <button onclick="" class="w-btn" type="button">좋아요!</button>
+                <p>10</p>
+            </div>
             <article class="comments">
-                <h3>댓글</h3>
                 <div class="comment-form">
                     <input type="text" placeholder="댓글을 작성해주세요." class="comment-input">
                     <button type="submit" class="comment-submit">등록</button>

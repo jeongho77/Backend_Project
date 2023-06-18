@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,9 +8,10 @@
     <script type="text/javascript" src="index.js"></script>
     <title>Nekarakubae - 개발자 커뮤니티</title>
 </head>
+
 <body>
     <header>
-        <h1 onclick="moveMain()">Nekarakubae</h1>
+        <img src="images/title.png" onclick="moveMain()" alt="타이틀">
         <nav>
             <span onclick="moveCommunity()" class="w-btn">커뮤니티</span>
             <span onclick="moveKnowledge()" class="w-btn">지식</span>
@@ -25,15 +27,18 @@
         </div>
     </header>
     <div class="postcontainer">
-        <video class="center" src="video/welcome.mp4" poster="images/notfound.png" width="100%" loop="" autoplay=""
-            muted=""></video>
+        <video src="video/welcome.mp4" poster="images/notfound.png" loop="" autoplay="" muted=""></video>
+        <div>
+            <h3>모든 개발자를 위한 SNS</h3>
+            <h1>네카라쿠배</h1>
+        </div>
     </div>
     <div class="box-container">
         <div class="box">
             <h2>실시간 BEST</h2>
             <ul>
                 <li>
-                    <div id="left">
+                    <div onclick="moveCommunityPage()" id="left">
                         <h3>글 제목 1</h3>
                         <small>작성자: 사용자1 </small>
                         <small> | </small>
@@ -146,4 +151,5 @@
         <p>Nekarakubae &copy; 2023. All rights reserved.</p>
     </footer>
 </body>
+
 </html>

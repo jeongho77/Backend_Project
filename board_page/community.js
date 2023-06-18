@@ -25,3 +25,7 @@ function moveLogin() {
 function moveSignup() {
     location.href = "../login_page/signup.html"
 }
+
+function moveWrite() {
+    location.href = "write.html"
+}
