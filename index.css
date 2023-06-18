@@ -109,6 +109,11 @@ button {
     transform: scale(1.5);
 }
 
+.login-success {
+    display: flex;
+    align-items: center;
+}
+
 .postcontainer {
     background-image: linear-gradient(rgba(255, 255, 255, 0.231),
             rgba(0, 0, 0, 0.8)), url("images/background.jpg");
